@@ -33,19 +33,21 @@ public class Exercicio11 {
 
         higherHeight = 0;
         shorterHeight = 0;
-        // TENTANDO IMPLEMENTAR LISTA ORDENADA POR CONTA PROPRIA
-        for (int i = 0; i < vect.length - 1; i++) {
-            for (int j = 0; j < vect.length - 1 - i; j++) {
-                PessoaExercicio11 aux = vect[j];
-                if (vect[j].getHeight() > vect[j + 1].getHeight()) {
-                    vect[j] = vect[j + 1];
-                    vect[j + 1] = aux;
-                }
-                higherHeight = vect[i + 1].getHeight();
-                shorterHeight = vect[0].getHeight();
-            }
 
-        }
+        PessoaExercicio11.higherHeight(vect);
+        // TENTANDO IMPLEMENTAR LISTA ORDENADA POR CONTA PROPRIA
+//        for (int i = 0; i < vect.length - 1; i++) {
+//            for (int j = 0; j < vect.length - 1 - i; j++) {
+//                PessoaExercicio11 aux = vect[j];
+//                if (vect[j].getHeight() > vect[j + 1].getHeight()) {
+//                    vect[j] = vect[j + 1];
+//                    vect[j + 1] = aux;
+//                }
+//                higherHeight = vect[i + 1].getHeight();
+//                shorterHeight = vect[0].getHeight();
+//            }
+//
+//        }
 
         quantityMen = 0;
         quantityWoman = 0;
